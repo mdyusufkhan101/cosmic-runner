@@ -1,19 +1,4 @@
-/* html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#game-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-color: #000;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
 
 #rocket {
     width: 200px;
@@ -27,14 +12,28 @@ body {
     background-repeat: no-repeat;
 }
 
-#fuel-meter {
-    width: 100%;
-    height: 10px;
+#meter-container{
     position: absolute;
-    bottom: 10px;
+    display: flex;
+    left: 5%;
+    top: 2%;
+    width: 25%;
+    height: 20px;
+    color: #fff;
+    font-family: 'Darumadrop One', cursive;
+    gap: 10px;
+    font-size: 20px;
+}
+
+#fuel-meter {
+    top: 45%;
     left: 0;
+    height: 15px;
+    width: 100%;
+    border-radius: 3px;
     background-color: #fff;
-} */
+    position: relative;
+} 
 
 body{
     display: flex;
@@ -50,6 +49,22 @@ body{
     background-image: url('./assets/spacebg.png');
     background-repeat: repeat-y repeat-x;
     animation: scroll 10s linear infinite;
+}
+
+.score{
+    position: absolute;
+    display: flex;
+    left: 75%;
+    top: 2%;
+    height: 20px;
+    color: #fff;
+    font-family: 'Darumadrop One', cursive;
+    gap: 10px;
+    font-size: 20px;
+}
+
+p{
+    margin: 0;
 }
 
 /* @keyframes scroll {
